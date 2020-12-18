@@ -1,12 +1,22 @@
 import React from 'react'
-import Launch from './Launch'
+import { useLaunchesQuery } from "../../generated/graphql";
+import Launch, {ownProps} from './Launch'
 
-const index = () => {
-    return (
-        <div>
-            
-        </div>
-    )
+
+
+const LaunchContainer = (props: ownProps) => {
+    const { data, loading, error } = useLaunchesQuery();
+
+    if (loading) {
+        return <div> loading the data... </div>
+    }
+
+    if (error || !data) {
+        return <div> Error :( </div>
+    }
+
+    return <Launch data={data} {...props} />
 }
 
-export default index
+
+export default LaunchContainer;

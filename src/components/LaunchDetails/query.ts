@@ -3,7 +3,7 @@ import gql from 'graphql-tag';
 
 
 export const QUERY_LAUNCH_DETAILS = gql `
-    query Launchetails ($id: String) {
+    query LaunchDetails ($id: String) {
         launch(id: $id) {
         flight_number
         mission_name
