@@ -8,7 +8,9 @@ const LaunchContainer = (props: ownProps) => {
     const { data, loading, error } = useLaunchesQuery();
 
     if (loading) {
-        return <div> loading the data... </div>
+        return <div className='loader-container'>
+            <div className='loader'> </div>
+        </div>
     }
 
     if (error || !data) {

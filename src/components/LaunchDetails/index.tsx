@@ -10,7 +10,9 @@ const LaunchDetailsContainer: React.FC<Props> = ({id}) => {
     const { data, loading, error } = useLaunchDetailsQuery({ variables: { id: `${id}` } });
 
     if (loading) {
-        return <div>Loading...</div>
+        return <div className='loader-container'>
+            <div className='loader'> </div>
+        </div>
     }
 
     if (error) {
