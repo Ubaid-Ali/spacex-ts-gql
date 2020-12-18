@@ -13,16 +13,19 @@ interface Props extends ownProps {
 
 const Launch: React.FC<Props> = ({ data, handleIdChange }) => (
     <div className="Launches">
-        <h3>All Space X Launches </h3>
-        <ol className='LaunchesOL'>
+        <h2 className='launches-h2' >All Space X Launches </h2>
+        <ol className='tilesWrap'>
             {!!data.launches && data.launches.map(
                 (launch, i) => !!launch && (
                     <li
-                        onClick={() => handleIdChange(launch.flight_number!)}
                         key={i}
-                        className='LaunchesLI'
+                        className='tilesWrap li'
+                        onClick={() => handleIdChange(launch.flight_number!)}
                     >
-                        {launch.flight_number} {launch.mission_name} - {launch.launch_year} ({JSON.stringify(launch.launch_success)})
+                        <h2>{launch.flight_number}</h2>
+                        <h3>{launch.mission_name}</h3>
+                        <p> The rocket was launched in {launch.launch_year}  <br />
+                        success status ({JSON.stringify(launch.launch_success)})</p>
                     </li>
                 ))
             }
