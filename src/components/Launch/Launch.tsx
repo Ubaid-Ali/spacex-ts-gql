@@ -23,9 +23,13 @@ const Launch: React.FC<Props> = ({ data, handleIdChange }) => (
                         onClick={() => handleIdChange(launch.flight_number!)}
                     >
                         <h2>{launch.flight_number}</h2>
-                        <h3>{launch.mission_name}</h3>
+                        <h3><u>{launch.mission_name}</u></h3>
                         <p> The rocket was launched in {launch.launch_year}  <br />
-                        success status ({JSON.stringify(launch.launch_success)})</p>
+                            SUCCESS
+                            <span className={!!launch.launch_success ? 'green' : 'red'}> 
+                                ({JSON.stringify(launch.launch_success)})
+                            </span>
+                        </p>
                     </li>
                 ))
             }

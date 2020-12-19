@@ -3,6 +3,7 @@ import './App.css';
 import Launch from './components/Launch'
 import LaunchDetails from './components/LaunchDetails'
 import Header from './components/Header/Header'
+import Footer from './components/Footer/Footer'
 
 function App() {
   const [id, setId] = useState(0);
@@ -30,6 +31,7 @@ function App() {
         <LaunchDetails id={id} /> :
         null
       }
+      <Footer />
     </div>
   );
 }

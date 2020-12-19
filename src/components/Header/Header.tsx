@@ -13,7 +13,7 @@ const Header: React.FC<Props> = ({handleshow}) => {
                 <div className='overlay'>
                     <h1>Space X</h1>
                     <h3>Rocket Launches History</h3>
-                    <p>Original Details of every success and failure.</p>
+                    <p>SpaceX's achievements all details of every success and failure.</p>
                     <button onClick={handleshow} >SHOW LAUNCHES</button>
                 </div>
             </header>

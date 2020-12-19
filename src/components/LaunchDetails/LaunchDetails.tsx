@@ -19,14 +19,19 @@ const LaunchDetails: React.FC<Props> = ({ data }) => {
                 <h3>Flight no: {launch.flight_number}</h3>
             </div>
             <div>
-                <h2>Mission: {launch.mission_name}
+                <h2>Mission: {launch.mission_name}</h2>
+                <h3>Rocket: {launch.rocket?.rocket_name}</h3>
+                
+                <p>Launched in {launch.launch_year} from {launch.launch_site?.site_name}
                     <br />
-                    Rocket: {launch.rocket?.rocket_name}
-                </h2>
-                <h2>Launched in {launch.launch_year} from {launch.launch_site?.site_name}</h2>
-                <p>Rocket type: {launch.rocket?.rocket_type}, Success status: {JSON.stringify(launch.launch_success)}</p>
+                    Rocket type: {launch.rocket?.rocket_type}, Success status: <b>{JSON.stringify(launch.launch_success)}</b></p>
                 <p>{launch.details}</p>
-                <p></p>
+                
+                <p>
+                    {launch.links?.video_link ? <a className='video-a' href={launch.links?.video_link}>| VIDEO LINK | </a> : null}
+                    {launch.launch_site?.site_name ? <a className='video-a' href={launch.launch_site?.site_name}>| SITE LINK | </a> : null}
+                </p>
+
                 <div className='image-div'>
                     {!!launch.links && !!launch.links?.flickr_images && (
                         <div>

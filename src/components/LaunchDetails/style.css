@@ -10,7 +10,18 @@
     align-items: center;
 }
 
+.video-a {
+    text-decoration: none;
+    color: cornsilk;
+    padding: 5px;
+    display: inline-block;
+}
+
 img {
     max-width: 90%;
     margin-top: 10px;
+}
+
+h2 {
+    text-decoration-line: underline;
 }

@@ -111,11 +111,12 @@
 	top: 0;
 	background: rgba(255, 255, 255, 0.02);
 }
-/* .tilesWrap li:before {
-	background: #c21500;
-background: -webkit-linear-gradient(to right, #ffc500, #c21500);
-background: linear-gradient(to right, #ffc500, #c21500);
-} */
+.green {
+	color: green;
+}
+.red {
+	color: red;
+}
 
 .tilesWrap li:before {
 	background: #FC354C;
