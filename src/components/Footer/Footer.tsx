@@ -30,7 +30,6 @@ const Footer = () => {
                                 <li><a className="linkedin" href="https://en.wikipedia.org/wiki/SpaceX">l<i className="fa fa-linkedin"></i></a></li>
                             </ul>
                         </div>
-
                     </div>
                 </div>
             </footer>

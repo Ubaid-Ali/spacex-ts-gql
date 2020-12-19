@@ -1,0 +1,24 @@
+Details of initialize project
+
+//create project
+npx create-react-app spacex
+
+// add package
+yarn add graphql-tag graphql
+
+// add package
+yarn add -D @apollo/client
+
+// add package
+yarn add -D @graphql-codegen/cli
+
+// run setup
+yarn graphql-codegen init
+
+
+// installed testing libraries
+npm i -D ts-jest jest-fetch-mock enzyme enzyme-adapter-react-16 enzyme-to-json @types/enzyme @types/enzyme-adapter-react-16 --save-exact
+
+
+// for fixing type error react, works fine for me
+npm install -D @types/react
