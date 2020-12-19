@@ -18,15 +18,15 @@ const Footer = () => {
                     <div className="row">
                         <div className="col-md-8 col-sm-6 col-xs-12">
                             <p className="copyright-text">Copyright &copy; 2020 All Rights Reserved by 
-                            <a href="#">spacex-ts-gql</a>.
+                            <a href="http://spacex-ts-gql.surge.sh/">spacex-ts-gql</a>.
                         </p>
                         </div>
 
                         <div className="col-md-4 col-sm-6 col-xs-12">
                             <ul className="social-icons">
-                                <li><a className="facebook" href="#">f<i className="fa fa-facebook"></i></a></li>
-                                <li><a className="twitter" href="#">t<i className="fa fa-twitter"></i></a></li>
-                                <li><a className="dribbble" href="#">d<i className="fa fa-dribbble"></i></a></li>
+                                <li><a className="facebook" href="https://www.facebook.com/">f<i className="fa fa-facebook"></i></a></li>
+                                <li><a className="twitter" href="https://twitter.com/">t<i className="fa fa-twitter"></i></a></li>
+                                <li><a className="dribbble" href="https://dribbble.com/">d<i className="fa fa-dribbble"></i></a></li>
                                 <li><a className="linkedin" href="https://en.wikipedia.org/wiki/SpaceX">l<i className="fa fa-linkedin"></i></a></li>
                             </ul>
                         </div>
