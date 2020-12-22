@@ -3,7 +3,7 @@ import './style.css'
 
 const Footer = () => {
     return (
-        <>
+        <div>
             <footer className="site-footer">
                 <div className="container">
                     <div className="row">
@@ -33,7 +33,7 @@ const Footer = () => {
                     </div>
                 </div>
             </footer>
-        </>
+        </div>
     )
 }
 
