@@ -27,7 +27,7 @@ const Launch: React.FC<Props> = ({ data, handleIdChange }) => (
                         <h3><u>{launch.mission_name}</u></h3>
                         <p> The rocket was launched in {launch.launch_year}  <br />
                             SUCCESS
-                            <span className={!!launch.launch_success ? 'green' : 'red'}> 
+                            <span className={launch.launch_success ? 'green' : 'red'}> 
                                 ({JSON.stringify(launch.launch_success)})
                             </span>
                         </p>
