@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import './App.css';
-import Launch from './components/Launch'
-import LaunchDetails from './components/LaunchDetails'
-import Header from './components/Header/Header'
-import Footer from './components/Footer/Footer'
+import Launch from '../Launch'
+import LaunchDetails from '../LaunchDetails'
+import Header from '../Header/Header'
+import Footer from '../Footer/Footer'
 
-function App() {
+
+const App: React.FC = () => {
   const [id, setId] = useState(0);
   const [showlist, setShowList] = useState(true)
 

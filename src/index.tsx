@@ -4,7 +4,7 @@ import { ApolloProvider } from '@apollo/client';
 
 import client from './gqlConfig/GqlConfig';
 import './index.css';
-import App from './App';
+import App from './components/App/App';
 
 
 

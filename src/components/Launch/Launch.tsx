@@ -19,6 +19,7 @@ const Launch: React.FC<Props> = ({ data, handleIdChange }) => (
                 (launch, i) => !!launch && (
                     <li
                         key={i}
+                        id='testList'
                         className='tilesWrap li'
                         onClick={() => handleIdChange(launch.flight_number!)}
                     >
